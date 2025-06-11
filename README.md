@@ -7,5 +7,7 @@ Git
 
 ## How to run
 npm install vite
+
 npm install dev
+
 npm run dev
