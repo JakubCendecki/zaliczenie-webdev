@@ -3,6 +3,7 @@ Projekt zaliczeniowy
 
 ## Prerequsities
 Node.js
+
 Git
 
 ## How to run
