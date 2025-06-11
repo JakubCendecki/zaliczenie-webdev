@@ -5,34 +5,114 @@
         <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <!-- Wpisać title i content -->
-        <title></title>
-        <meta name="description" content="">
-        <meta name="apple-mobile-web-app-title" content="" />
+        <title>Kaliop Fanpage</title>
+        <meta name="description" content="Fanpage for Kaliop Poland SP z.o.o.">
+        <meta name="apple-mobile-web-app-title" content="Fanpage for Kaliop Poland SP z.o.o." />
 
-        <!-- pamiętać o wstawianiu ikon -->
         <link rel="icon" type="image/png" href="/img/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/img/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/img/favicon/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png" />
         <link rel="manifest" href="/img/favicon/site.webmanifest" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        <!-- znaleźć jakiegoś fonta -->
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
         <script type="module" src="/src/js/main.js" defer></script>
         <link rel="stylesheet" href="/src/scss/main.scss">
     </head>
     <body>
-        <header>
-
+        <picture>
+            <source srcset="/img/background.webp, /img/background-2x.webp 2x" type="image/webp">
+            <img class="background" src="/img/background.jpg" alt="Background image of Kaliop Poland">
+        </picture>
+        <header class="header" id="header">
+            <picture class="header__profile-picture">
+                <source srcset="/img/profile-picture.webp, /img/profile-picture-2x.webp 2x" type="image/webp">
+                <img width="225" height="225" class="personal__photo" src="/img/profile-picture.jpg" alt="Profile picture of Kaliop Poland">
+            </picture>
+            <h1>Kaliop Poland</h1>
+            <section class="header__stats">
+                <ul class="header__stats-list">
+                    <li class="header__stats-list-item"><span class="header__stats-item-likes" id="numOfLikes">403</span> polubienia</li>
+                    <li class="header__stats-list-item"><span id="numOfFollows">458</span> obserwujący</li>
+                </ul>
+                <ul class="header__people">
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                    <li class="header__people-picture"></li>
+                </ul>
+            </section>
+            <section class="header__interaction-menu">
+                <ul class="header__menu-list">
+                    <button class="header__menu-button">Wyślij wiadomość</button>
+                    <button class="header__menu-button">Lubisz to</button>
+                    <button class="header__menu-button">Szukaj</button>
+                </ul>
+            </section>
+            <section class="header__information-menu">
+                <ul class="header__information-menu__list">
+                    <li class="header__information-menu__list-item"><button>Posty</button></li>
+                    <li class="header__information-menu__list-item"><button>Informacje</button></li>
+                    <li class="header__information-menu__list-item"><button>Wzmianki</button></li>
+                    <li class="header__information-menu__list-item"><button>Więcej</button></li>
+                    <li class="header__information-menu__list-item"><button>...</button></li>
+                </ul>
+            </section>
         </header>
 
-        <main>
-
+        <main class="info">
+            <header class="info__header">
+                <span class="info__header-text">
+                    Przełącz na stronę Kaliop Poland, aby zacząć nią zarządzać
+                </span>
+                <button class="info__header-button">Przełącz teraz</button>
+            </header>
+            <section class="info__content">
+                <h2 class="info__content-header">Prezentacja</h2>
+                <p class="info__content-text">Dostawca rozwiązań IT dla biznesu. 20 lat doświadczeń na rynku, setki zrealizowanych projektów</p>
+            </section>
+            <address id="contact" class="info__contact">
+                <ul class="info__contact-list">
+                    <li class="info__contact-list-item">
+                            <span>Strona</span>
+                            Usługi biznesowe
+                        </a>
+                    </li>
+                    <li class="info__contact-list-item">
+                        <a class="info__contact-list-item-value" href="" id="address" title="Zobacz na Google Maps" target="_blank">
+                            Portowa 13B, Słupskie, Poland
+                        </a>
+                    </li>
+                    <li class="info__contact-list-item">
+                        <a class="info__contact-list-item-value" href="tel:+48598413714" id="phone" title="Zadzwoń do firmy">
+                            59 841 37 14
+                        </a>
+                    </li>
+                    <li class="info__contact-list-item">
+                        <a class="info__contact-list-item-value" href="mailto:biuro@kaliop.pl" id="email" title="Napisz e-mail">
+                            biuro@kaliop.pl
+                        </a>
+                    </li>
+                    <li class="info__contact-list-item">
+                        <a class="info__contact-list-item-value" href="https://www.kaliop.com" id="website" title="Wejdź na stronę" target="_blank">
+                            kaliop.pl
+                        </a>
+                        <button class="info__contact-list-item-button">
+                            Promuj witrynę
+                        </button>
+                    </li>
+                    <li class="info__contact-list-item">
+                        Zamknięte teraz
+                    </li>
+                    <li class="info__contact-list-item">
+                        Jeszcze nie oceniono (<span id="rating">0</span> opinii)
+                    </li>
+                </ul>
+            </address>
         </main>
 
         <footer>
